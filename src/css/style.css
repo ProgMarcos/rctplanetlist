@@ -1,0 +1,184 @@
+.gray-img {
+    width: 300px;
+    filter: grayscale(100%);
+    border: 100px;
+    border-style: #ffffff;
+}
+
+
+.card-1 {
+    
+  }
+  
+  .color-img:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+.divs {
+    margin: 20px;
+}
+
+.title, .divBT {
+    text-align: center;
+}
+
+.color-img {
+    width: 300px;
+    border: 100px;
+    border-style: #ffffff;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.281), 0 1px 2px rgba(153, 151, 151, 0.37);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+h3{
+    margin: 40px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+li{
+    font-size: 17px;
+    font-weight: bold;
+    margin: 12px;
+}
+
+/*Formulario*/
+
+.divform {
+    height: 50px;
+    position: relative;
+    width: 80%;
+    margin-top: 30px;
+    margin: 20px;
+    
+}
+
+.divformst {
+    height: 50px;
+    position: relative;
+    width: 30%;
+    margin-top: 30px;
+    margin: 20px;
+    
+}
+
+
+.placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+
+.input {
+    font-family: sans-serif;
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+.cut {
+    background-color: #15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+}
+
+.cut-short {
+    width: 50px;
+}
+
+.input:focus~.cut,
+.input:not(:placeholder-shown)~.cut {
+    transform: translateY(8px);
+}
+
+.input:focus~.placeholder,
+.input:not(:placeholder-shown)~.placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown)~.placeholder {
+    color: #808097;
+}
+
+.input:focus~.placeholder {
+    color: #245461;
+}
+
+/* Button */
+.button {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #245461 0, #65657b 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    margin: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    width: 250px;
+}
+
+.button .voltar{
+    width: 100px;
+}
+
+.button:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
